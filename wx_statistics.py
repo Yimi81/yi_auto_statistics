@@ -46,7 +46,7 @@ args["wxid"] = wx_info[0]["wxid"]
 args["require_list"] = "all"
 
 # 获取微信文件夹路径
-# user_dirs = get_wechat_db(args["require_list"], args["wx_files"], args["wxid"], True)
+user_dirs = get_wechat_db(args["require_list"], args["wx_files"], args["wxid"], True)
 
 args["db_path"] = rf"{wx_info[0]['filePath']}\Msg"
 args["out_path"] = "./decrypted"
@@ -72,7 +72,7 @@ with DBPool(args["micro_path"]) as db:
     yi_chat_room = execute_sql(db, sql)
     print(yi_chat_room)
 
-# 记录四个群自今天开始过去一周所有聊天记录
+# 记录所有Yi相关群自今天开始过去一周所有聊天记录
 all_export_path = []
 export_group_order = []
 
@@ -121,7 +121,7 @@ if yi_chat_room:
         os.makedirs(result_output_path)
 
     end_date = datetime.now().date()
-    merged_df.to_csv(rf"{result_output_path}/{end_date}_merged_file.csv", index=False)
+    merged_df.to_csv(rf"{result_output_path}/{end_date}_wx_merged_file.csv", index=False)
 
     # 记录特定人聊天记录
     talker_ids = ["我", "xmafile"]  # 当前记录：易国峰，马诺
