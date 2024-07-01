@@ -1,6 +1,5 @@
 dist/
 build/
-export/
 .git/
 __pycache__/
 decrypted/
