@@ -21,6 +21,8 @@ from pywxdump.dbpreprocess import (
     export_json,
 )
 from datetime import datetime
+import argparse
+
 
 # 获取微信基址偏移
 args = {
@@ -65,7 +67,7 @@ args.update(
 )
 # print(get_core_db(args["wx_files"],["MSG", "MediaMSG", "MicroMsg"]))
 
-# 获取四个微信群聊的username, 即id
+# 获取五个微信群聊的username, 即id
 yi_chat_room = None
 with DBPool(args["micro_path"]) as db:
     sql = "SELECT UserName, NickName FROM Contact WHERE NickName IN ('Yi User Group 中文社区', 'Yi-VL User Group', '零一万物大模型开放平台API', '零一万物大模型开放平台社区')"

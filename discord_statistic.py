@@ -3,13 +3,26 @@ import csv
 from discord.ext import commands
 from datetime import datetime, timedelta
 import pandas as pd
+import argparse
 
+
+parser = argparse.ArgumentParser(description="Statistical Discord Information.")
+parser.add_argument(
+    "--talker_ids",
+    default=["我", "Nuo Ma @01.ai"],
+    help="特定人的用户名，用来计算解决问题数量",
+)
+
+args = parser.parse_args()
 
 # 初始化bot
 intents = discord.Intents.default()
 intents.messages = True
 intents.message_content = True
 client = commands.Bot(command_prefix="!", intents=intents)
+
+# 替换Bot Token
+client.run("MTIzNDQwNjEwOTc1MDc1NTM1OQ.Gq9TtD.nT_y8Rd8KHyH0V7UMK52R0hBFRrCEzWOEiWpGQ")
 
 
 def convert_df(path, group):
@@ -82,13 +95,11 @@ async def on_ready():
         ignore_index=True,
     )
     end_date = datetime.now().date()
-    merged_df.to_csv(rf"./export/discord/{end_date}_discord_merged_file.csv", index=False)
+    merged_df.to_csv(
+        rf"./export/discord/{end_date}_discord_merged_file.csv", index=False
+    )
     # 记录特定人聊天记录
-    talker_ids = ["我", "Nuo Ma @01.ai"]  # 当前记录：易国峰，马诺
+    talker_ids = args.talker_ids  # 当前记录：易国峰，马诺
     filtered_df = merged_df.loc[merged_df["Author"].isin(talker_ids)]
     print(f"总解决问题：{len(filtered_df)}")
     return
-
-
-# 替换Bot Token
-client.run("MTIzNDQwNjEwOTc1MDc1NTM1OQ.GxDdNu.uoiJvGxAqc7GdzFFjVZ_dwuwnxTESb0xWaQtmk")
