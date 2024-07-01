@@ -13,6 +13,7 @@ pip install -r requirements.txt
 
 # Discord数据统计
 - 更新`client.run`内的token，才能有权限访问读取所有频道的历史信息
+- 目前这个机器人是我的账户创建的，你可以自己创建一个机器人，然后把赋予相应的读取权限让诺拉进去，然后替换token
 ```python
 python discord_statistic.py
 ```
@@ -32,6 +33,7 @@ args = {
 python wx_statistics.py
 ```
 
+- 上述两个脚本代码都不长，遇到问题可以跟一下代码debug一下。
 # Acknowledgments
 
 This code is based on [PyWxDump](https://github.com/xaoyaoo/PyWxDump)
