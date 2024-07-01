@@ -91,4 +91,4 @@ async def on_ready():
 
 
 # 替换Bot Token
-client.run("")
+client.run("MTIzNDQwNjEwOTc1MDc1NTM1OQ.GxDdNu.uoiJvGxAqc7GdzFFjVZ_dwuwnxTESb0xWaQtmk")

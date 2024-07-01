@@ -68,7 +68,7 @@ args.update(
 # 获取四个微信群聊的username, 即id
 yi_chat_room = None
 with DBPool(args["micro_path"]) as db:
-    sql = "SELECT UserName, NickName FROM Contact WHERE NickName IN ('Yi User Group 中文社区', 'Yi-VL User Group', '零一万物大模型开放平台API')"
+    sql = "SELECT UserName, NickName FROM Contact WHERE NickName IN ('Yi User Group 中文社区', 'Yi-VL User Group', '零一万物大模型开放平台API', '零一万物大模型开放平台社区')"
     yi_chat_room = execute_sql(db, sql)
     print(yi_chat_room)
 
