@@ -9,11 +9,14 @@ Automatically tally WeChat group chat information, Discord various channel infor
 conda create -n auto_static python=3.10 -y
 conda activate auto_static
 pip install -r requirements.txt
+pip install .
 ```
 
 # Discord数据统计
 - 更新`client.run`内的token，才能有权限访问读取所有频道的历史信息
 - 目前这个机器人是我的账户创建的，你可以自己创建一个机器人，然后把赋予相应的读取权限让诺拉进去，然后替换token
+- 创建自己的机器人：https://discord.com/developers/applications
+
 ```python
 python discord_statistic.py
 ```

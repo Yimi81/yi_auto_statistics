@@ -21,10 +21,6 @@ intents.messages = True
 intents.message_content = True
 client = commands.Bot(command_prefix="!", intents=intents)
 
-# 替换Bot Token
-client.run("MTIzNDQwNjEwOTc1MDc1NTM1OQ.Gq9TtD.nT_y8Rd8KHyH0V7UMK52R0hBFRrCEzWOEiWpGQ")
-
-
 def convert_df(path, group):
     df = pd.read_csv(path)
     df["group"] = group
@@ -103,3 +99,6 @@ async def on_ready():
     filtered_df = merged_df.loc[merged_df["Author"].isin(talker_ids)]
     print(f"总解决问题：{len(filtered_df)}")
     return
+
+# 替换Bot Token
+client.run("MTIzNDQwNjEwOTc1MDc1NTM1OQ.G9OPvb.-t3HdyDnYUCDpeNVT8EfVROIi2n1Jg_xB8GycE")

@@ -1,0 +1,31 @@
+Author,Content,Timestamp
+Nix,Congrats on Yi-1.5-34B-Chat being 4th on the new Open LLM Leaderboard!,2024-06-26 15:53:48.888000+00:00
+Nuo Ma @01.ai,"woohoo, time for some Mergekit magic lmao",2024-06-26 15:54:11.617000+00:00
+Nix,Yep! Let's enjoy the clean leaderboard while it lasts xD,2024-06-26 15:54:52.667000+00:00
+muzamil arslan,I apologize for giving you a late job I rarely use discord so I need to know how to use it as I am speaking from Pakistan so chat here.  The PD is working but beyond that we don't know how,2024-06-27 10:59:33.386000+00:00
+muzamil arslan,I have no idea how can I use it in Pakistan or how can I benefit from it so can you help me and is there any group or facebook page which  You have created where I am an ad so that I can get information from zero that how can I work in it or how can I do awareness here or how can I build a business here.,2024-06-27 11:01:05.135000+00:00
+muzamil arslan,<@286272278898147329> If there is any chat group let me know I would like to be added to it so that I can get information,2024-06-27 11:01:59.282000+00:00
+Nuo Ma @01.ai,"Sorry to hear that arslan, but we currently only maintain discord, twitter and linkedin for communications outside Mainland China. You can email me at manuo@01.ai if you need help. 😉",2024-06-27 11:25:57.501000+00:00
+CPDD,"Hey, is there a way to make the response more like a human instead of sound like a robot? Do we have to change the prompt somehow?",2024-06-27 12:48:49.055000+00:00
+Nuo Ma @01.ai,"That’s where prompt engineering kicks in. For example, the simplest form can be: Answer users question in children’s book author. Users question: hi how are you today. Of course the requirements will be hidden from the user.",2024-06-27 12:53:44.614000+00:00
+Nix,"I see your on huggingface on the model card for the model so I am not sure your able to change the system prompt, I would suggest you go to https://huggingface.co/chat/, sign in, change the current model to Yi-1.5-34B-Chat, and then hitting activate model. That will switch it to use that model instead, and with huggingchat, your able to change the system prompt like Nuo mentioned to be able to have the model respond how you would like!",2024-06-27 12:57:51.313000+00:00
+CPDD,<@556614243517202443> <@286272278898147329>  Thanks a lot! Will explore on the  https://huggingface.co/chat/.,2024-06-27 13:06:29.990000+00:00
+Nix,Got it! Hope you have fun!,2024-06-27 13:06:45.928000+00:00
+CPDD,"Also I have one question,if I use Lora to finetune this model with additional training set, for my case chat mostly. Do you guys think prompt engineering will be necessary when using the model like Zero shot prompting",2024-06-27 13:21:36.506000+00:00
+Nuo Ma @01.ai,"I can’t provide a direct answer, because this is heavily dataset or task-dependent.  For open source models (smaller compared to closed source ones), if you have a very specific downstream task (nl2sql, or answer in a certain style), then yes I think sft works better. As opposed to larger closed source models works fine with prompt engineering.",2024-06-27 13:26:16.429000+00:00
+CPDD,"Thanks, that makes sense.  The reason I am asking is, I am building an english learning app which has different scenarios(Like ordering food, traval, communication, etc). I added additional 10k+ chat data for SFT purpose. And applied quantization method to reduce the model size. It works in zero shot prompting. But the response quality are concerning(was using llama2 as base). So back to the topic, if I have different scenarios, in order not to do sft, I should provide the prompt for each scenario?",2024-06-27 13:40:25.508000+00:00
+CPDD,Also can I use AWQ or GPTQ on Yi?,2024-06-27 13:41:24.469000+00:00
+CPDD,"Hi Nix, I have seen yi-1.5-34B-Chat on HuggingChat listed models. Do you have any ideas by any chance I can change this model from yi-1.5-34B-chat to a smaller one like yi-1.5-9B-Chat on the models section? I did not find a insert or change model option?",2024-06-27 14:03:11.351000+00:00
+Nix,"Sadly HuggingChat only has the models you see listed as they are added by the Huggingface team, to try Yi-1.5-9B, the only place I know where you can try it would be using it on your own computer with a program like LMStudio or Ollama",2024-06-27 14:04:28.540000+00:00
+Nix,"There might be a place online where it is being served with the option to change system prompt, but I do not know of any",2024-06-27 14:04:53.702000+00:00
+CPDD,"No worries at all. Good to know, which is good for Yi right, among all the models, they picked yi as showcase. I will spin up a instance to try Yi-1.5-9b on my end then.",2024-06-27 14:11:18.569000+00:00
+Nix,"Got it!, Hope it goes well for you",2024-06-27 14:11:50.988000+00:00
+bumblebee,Guys this 34 b model is really good and we will be out with very exciting project for code understanding and modification in oss which uses dspy and yi 1.5 34b very grateful to you guys,2024-06-28 10:23:13.127000+00:00
+Nuo Ma @01.ai,"Thank you for your support, and if you got good results, please let us know",2024-06-28 13:49:41.251000+00:00
+bumblebee,Yes absolutely 😇,2024-06-28 13:50:19.548000+00:00
+Paul,<@286272278898147329> How did you get Yi-Large on Nvidia Nim?,2024-06-29 22:55:48.154000+00:00
+Nuo Ma @01.ai,I have no idea.🤷,2024-06-30 11:52:31.780000+00:00
+Nix,"I was scrolling through EQ-Bench and saw that Yi-1.5-34B was high up on it, so I decided to email the developer and see if they could bench Yi-Large on it as well, quite interested especially with how well it does with creative writing for me",2024-06-30 18:47:34.999000+00:00
+Nix,They said they will take a look!,2024-06-30 18:54:33.681000+00:00
+dkb,hello,2024-07-01 02:29:14.225000+00:00
+Nuo Ma @01.ai,"It’s a collaboration with nvidia, but it’s only a playground. If you would like to try out yi-large, its available on platform.01.ai and fireworks.ai",2024-07-02 04:05:12.460000+00:00
