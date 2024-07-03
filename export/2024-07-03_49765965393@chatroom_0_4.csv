@@ -1,4 +1,0 @@
-id,MsgSvrID,type_name,is_sender,talker,room_name,content,CreateTime
-1,7353592699922440298,图片,0,unfish,49765965393@chatroom,"{""src"": ""FileStorage\\MsgAttach\\5ff22821d6c4d168b0f0fe346e2c0a25\\Image\\2024-07\\2f02267adcc72dac9a44f5643e66123e.dat"", ""msg"": ""图片""}",2024-07-02 08:54:37
-2,8632371192212527377,文本,0,unfish,49765965393@chatroom,"{""src"": """", ""msg"": ""零一的响应里有tools参数，但请求参数里不支持tools是吗？""}",2024-07-02 08:54:53
-3,7404622834994522066,文本,0,xmafile,49765965393@chatroom,"{""src"": """", ""msg"": ""目前是的，fc相关的功能模型在迭代""}",2024-07-02 14:06:34

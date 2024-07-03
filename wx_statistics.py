@@ -54,7 +54,7 @@ args["db_path"] = rf"{wx_info[0]['filePath']}\Msg"
 args["out_path"] = "./decrypted"
 
 # 解密微信数据库
-result = batch_decrypt(args["key"], args["db_path"], args["out_path"], True)
+# result = batch_decrypt(args["key"], args["db_path"], args["out_path"], True)
 
 args.update(
     {
@@ -102,8 +102,7 @@ if yi_chat_room:
             all_export_path.append(export_path)
             total_count_last_week += chatCount
         else:
-            print(export_path)
-            break
+            print(f"过去七天{nick_name}无记录：{export_path}")
 
     print("=" * 10 + "最终结果" + "=" * 10)
     print(f"上周技术讨论量: {total_count_last_week}")
