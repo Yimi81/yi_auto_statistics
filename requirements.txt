@@ -14,5 +14,5 @@ blackboxprotobuf
 lz4
 lxml
 flask_cors
-pandas=2.2.2
+pandas==2.2.2
 discord
